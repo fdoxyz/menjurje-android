@@ -7,12 +7,12 @@ android:
   components:
   - tools
   - platform-tools
-  - build-tools-28.0.3
-  - android-28
+  - build-tools-29.0.3
+  - android-29
   - extra-google-m2repository
 before_install:
+  - yes | sdkmanager "platforms;android-29"
   - gem install bundler
-  - yes | sdkmanager "platforms;android-28"
 install:
   - bundle install
 script:
