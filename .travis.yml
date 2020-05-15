@@ -10,7 +10,8 @@ android:
   - android-29
   - extra-google-m2repository
 before_install:
-    - gem install bundler
+  - gem install bundler
+  - yes | sdkmanager "platforms;android-29"
 install:
   - bundle install
 script:
