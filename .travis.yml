@@ -12,6 +12,7 @@ android:
   - extra-google-m2repository
 before_install:
   - yes | sdkmanager "platforms;android-29"
+  - yes | sdkmanager "platforms;android-28"
   - gem install bundler
 install:
   - bundle install
